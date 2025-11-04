@@ -1,0 +1,102 @@
+# ===================================
+# NODE
+# ===================================
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# ===================================
+# ENVIRONMENT VARIABLES
+# ===================================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# ===================================
+# LOGS
+# ===================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ===================================
+# OPERATING SYSTEM
+# ===================================
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ===================================
+# IDE / EDITORS
+# ===================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ===================================
+# TESTING
+# ===================================
+coverage/
+.nyc_output/
+*.lcov
+
+# ===================================
+# BUILD
+# ===================================
+dist/
+build/
+out/
+
+# ===================================
+# TEMP FILES
+# ===================================
+tmp/
+temp/
+*.tmp
+
+# ===================================
+# DATABASE
+# ===================================
+# Local database files (if any)
+*.db
+*.sqlite
+*.sqlite3
+
+# ===================================
+# MISC
+# ===================================
+.cache/
+*.pid
+*.seed
+*.pid.lock
