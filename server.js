@@ -25,15 +25,15 @@ const startServer = async () => {
     await connectDatabase();
 
     // Start listening
-    const server = app.listen(config.PORT, () => {
+    const server = app.listen(config.PORT, config.IP, () => {
       console.log('\n' + colors.success('='.repeat(60)));
       console.log(colors.success('🚀 SERVER STARTED SUCCESSFULLY'));
       console.log(colors.success('='.repeat(60)));
       console.log(colors.info('📍 Port:        ') + colors.white(config.PORT));
       console.log(colors.info('🌍 Environment: ') + colors.white(config.NODE_ENV));
-      console.log(colors.info('🔗 URL:         ') + colors.white(`http://localhost:${config.PORT}`));
-      console.log(colors.info('💚 Health:      ') + colors.white(`http://localhost:${config.PORT}/health`));
-      console.log(colors.info('📡 API Base:    ') + colors.white(`http://localhost:${config.PORT}${config.API_PREFIX}`));
+      console.log(colors.info('🔗 URL:         ') + colors.white(`http://${config.IP}:${config.PORT}`));
+      console.log(colors.info('💚 Health:      ') + colors.white(`http://${config.IP}:${config.PORT}/health`));
+      console.log(colors.info('📡 API Base:    ') + colors.white(`http://${config.IP}:${config.PORT}${config.API_PREFIX}`));
       console.log(colors.success('='.repeat(60)));
       console.log(colors.info('📝 Available Routes:'));
       console.log(colors.white(`   POST   ${config.API_PREFIX}/auth/signup`));

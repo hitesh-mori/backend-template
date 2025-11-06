@@ -15,6 +15,7 @@ const config = {
   SESSION_EXPIRE: parseInt(process.env.SESSION_EXPIRE) || 86400000,
   CORS_ORIGIN: process.env.CORS_ORIGIN || 'http://localhost:3000',
   API_PREFIX: process.env.API_PREFIX || '/api',
+  IP: process.env.IP || '127.0.0.1'
 };
 
 if (config.NODE_ENV === 'production') {
